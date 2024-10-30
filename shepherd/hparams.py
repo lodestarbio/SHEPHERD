@@ -216,7 +216,8 @@ def get_predict_hparams(args):
                'log_gpu_memory': False,
                'debug': False,
 
-               'augment_genes': True,
+               'alpha': 0,
+               'augment_genes': args.run_type == 'causal_gene_discovery',
                'n_sim_genes': 3,
                'aug_gene_w': 0.5,
 
